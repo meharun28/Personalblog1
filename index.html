@@ -1,0 +1,62 @@
+
+<html>
+<body>
+<header>
+    <h1>Meharun Blog</h1>
+<link rel="stylesheet" href="style.css">
+</header>
+<nav>
+  <a href="#" onclick="showSection('Home')">HOME</a>
+   <a href="#" onclick="showSection('About')">ABOUT</a>
+   <a href="#" onclick="showSection('Skills')">SKILLS</a>
+     <a href="#" onclick="showSection('Education')">EDUCATION</a>
+   <a href="#" onclick="showSection('Contact')">CONTACT</a>
+</nav>
+<div class="container">
+    <div class="blog-posts">
+        <div class="post">
+       <section id="Home">
+            <h2>Welcome to My Blog </h2>
+</section>
+<section id="About">
+            <p> Hello,I'm Meharun a passionate individual with a life my hobbies are watching mobile and playing games</p>
+</section>
+  <section id="Skills">         
+ <h1>Skills</h1>
+<p>Java<br>python<br>HTML<br></p><br>
+</section>
+<section id="Education">
+ <h1>Education Qualifications</h1>
+          <p>I'm pursuing btech III year in the field of CSEAIML from mallareddy college of engineering and technology<br>
+I have completed my diploma in govt polytechnic kothagudem in the field of mechanical engineering<br>
+I have completed my schooling in ST.mary's girls high school kothagudem</p>
+</section>
+<section id="Contact">
+            <h2>contact Me</h2>
+            meharunshaik028@gmail.com<br>
+            9************
+</section>
+        </div>
+    </div>
+</div>
+<footer>
+    &copy; 2024 Meharun Blog.All rights reserved
+</footer>
+    <script>
+    function showSection(sectionId) {
+        var sections = document.querySelectorAll('.container section');
+        sections.forEach(function (section) {
+            if (sectionId === 'Home') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        });
+        var selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.style.display = 'block';
+        }
+    }
+</script>
+</body>
+</html>
